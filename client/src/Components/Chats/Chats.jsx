@@ -1,6 +1,6 @@
 import React from "react";
 import "./Chats.scss";
-import { IconButton, Typography, Button } from "@mui/material";
+import { IconButton, Typography, Button, Stack } from "@mui/material";
 import { TbHistoryToggle } from "react-icons/tb";
 import { IoArchiveOutline } from "react-icons/io5";
 import { useSelector } from "react-redux";
@@ -36,36 +36,46 @@ export const Chats = () => {
         <Typography style={{ color: cr2 }}>Archived</Typography>
       </div>
       <hr />
-      <div className="pinned">
-        <Typography
-          style={{
-            alignSelf: "flex-start",
-            marginLeft: "15px",
-            marginTop: "10px",
-            color: cr2,
-          }}
-        >
-          Pinned
-        </Typography>
-        <ChatElement />
-        <ChatElement />
+      <div className="scroll">
+        <div className="pinned">
+          <Typography
+            style={{
+              alignSelf: "flex-start",
+              marginLeft: "15px",
+              marginTop: "10px",
+              color: cr2,
+            }}
+          >
+            Pinned
+          </Typography>
+          <ChatElement />
+          <ChatElement />
+        </div>
+        <div className="pinned">
+          <Typography
+            style={{
+              alignSelf: "flex-start",
+              marginLeft: "15px",
+              marginTop: "10px",
+              color: cr2,
+            }}
+          >
+            All Chats
+          </Typography>
+          <ChatElement />
+          <ChatElement />
+          <ChatElement />
+          <ChatElement />
+          <ChatElement />
+          <ChatElement />
+        </div>
       </div>
-      <div className="pinned">
-        <Typography
-          style={{
-            alignSelf: "flex-start",
-            marginLeft: "15px",
-            marginTop: "10px",
-            color: cr2,
-          }}
-        >
-          All Chats
-        </Typography>
-        <ChatElement />
-        <ChatElement />
-        <ChatElement />
-        <ChatElement />
-      </div>
+      <Typography
+        variant="h4"
+        style={{ fontWeight: "bold", color: cr, alignSelf: "center" }}
+      >
+        Chat App
+      </Typography>
     </div>
   );
 };
