@@ -44,7 +44,7 @@
       border-radius: 5px;
     }
     .selected {
-      background-color: rgb(40, 40, 212);
+      background-color: rgb(139, 139, 235);
       color: white;
     }
     .btn:hover {
@@ -69,7 +69,7 @@
     cursor: pointer;
   }
   .selected {
-    background-color: rgb(40, 40, 212);
+    background-color: rgb(140, 140, 241);
     color: white;
   }
   .avt {
@@ -101,4 +101,7 @@
     flex-direction: column;
     align-items: center;
   }
+}
+.wp {
+  display: flex;
 }

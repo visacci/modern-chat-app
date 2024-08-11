@@ -7,9 +7,7 @@ function App() {
   const bg = mode === "light" ? "white" : "rgb(46, 46, 64)";
   return (
     <div className="app" style={{ backgroundColor: bg }}>
-      <Router>
-        <Dashboard />
-      </Router>
+      <Dashboard />
     </div>
   );
 }
