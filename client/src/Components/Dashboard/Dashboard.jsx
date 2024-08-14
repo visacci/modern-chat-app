@@ -10,6 +10,7 @@ import { Chats } from "../Chats/Chats";
 
 const Dashboard = () => {
   const [selected, setSelected] = useState("");
+
   const { mode } = useSelector((state) => state.mode);
   const bg = mode === "light" ? "white" : "rgb(52, 53, 88)";
   const bg2 = mode === "light" ? "black" : "white";

@@ -1,0 +1,36 @@
+.messagex {
+  //background-color: blue;
+  width: 100%;
+  padding: 0px 15px 0px 15px;
+  margin-top: 15px;
+  display: flex;
+  height: auto;
+  //background-color: beige;
+  align-items: center;
+  justify-content: flex-start;
+  // flex-direction: column;
+  .chat-bubble {
+    max-width: 60%;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: 10px 0;
+    position: relative;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+  }
+
+  .message-time {
+    margin-top: 5px;
+    font-size: 0.8em;
+    color: #cce5ff;
+    color: black;
+    //text-align: right;
+    // background-color: red;
+  }
+  .message-content {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+  }
+}

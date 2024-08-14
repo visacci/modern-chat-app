@@ -1,0 +1,21 @@
+.divider {
+  // background-color: red;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  hr {
+    width: 40%;
+    border: none;
+    background-color: rgb(167, 168, 171);
+    height: 1px;
+  }
+}
+.text {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px 10px 5px 10px;
+}
+.media {
+  margin: 5px 10px 5px 10px;
+}

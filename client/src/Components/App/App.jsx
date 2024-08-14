@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import Conversation from "../Conversation/Conversation";
 function App() {
   const { mode } = useSelector((state) => state.mode);
-  const bg = mode === "light" ? "white" : "rgb(46, 46, 64)";
+  const bg = mode === "light" ? "white" : "rgb(43, 44, 46)";
   return (
     <div className="app" style={{ backgroundColor: bg }}>
       <Dashboard />

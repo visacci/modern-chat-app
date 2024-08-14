@@ -6,11 +6,10 @@ import { IoArchiveOutline } from "react-icons/io5";
 import { useSelector } from "react-redux";
 export const Chats = () => {
   const { mode } = useSelector((state) => state.mode);
-  const bg = mode === "dark" ? "rgb(52, 53, 88)" : "";
+  const bg = mode === "dark" ? "rgb(43, 44, 46)" : "";
   const cr = mode === "dark" ? "white" : "";
   const cr2 = mode === "dark" ? "rgb(140, 140, 241)" : "";
   const cr3 = mode === "dark" ? "rgb(75, 84, 105)" : "";
-
   return (
     <div className="chat" style={{ backgroundColor: bg }}>
       <div className="text">
@@ -82,7 +81,7 @@ export const Chats = () => {
 
 const ChatElement = () => {
   const { mode } = useSelector((state) => state.mode);
-  const cr4 = mode === "dark" ? "rgb(43, 44, 46)" : "";
+  const cr4 = mode === "dark" ? "rgb(52, 53, 88)" : "";
   const cr = mode === "dark" ? "white" : "";
   const cr1 = mode === "dark" ? "white" : "rgb(81, 88, 90)";
   return (
