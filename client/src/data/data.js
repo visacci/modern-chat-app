@@ -53,7 +53,7 @@ const Chat_History = [
   {
     type: "msg",
     subtype: "link",
-    preview: "",
+    preview: "/images/6.jpeg",
     message: "Yep, I can also do that",
     incoming: true,
     outgoing: false,
@@ -94,5 +94,5 @@ export {
   //   Nav_Setting,
   //   Nav_Buttons,
   Chat_History,
-  // Message_options,
+  Message_options,
 };

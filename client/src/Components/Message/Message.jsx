@@ -3,7 +3,14 @@ import "./Message.scss";
 import { Typography } from "@mui/material";
 
 import { Chat_History } from "../../data/data";
-import { TextMesage, Divider, MediaMessage } from "../MsgType/MsgType";
+import {
+  TextMesage,
+  Divider,
+  MediaMessage,
+  ReplyMessage,
+  LinkMsg,
+  DocMessage,
+} from "../MsgType/MsgType";
 const Message = () => {
   return (
     <div className="m">
@@ -14,12 +21,12 @@ const Message = () => {
           } else if (msg.type === "msg") {
             if (msg.subtype === "img") {
               return <MediaMessage msg={msg} />; //image component
-            } else if (msg.type === "doc") {
-              return; // document componrt
-            } else if (msg.type === "link") {
-              return; // link component
-            } else if (msg.type === "reply") {
-              return; //reply comp
+            } else if (msg.subtype === "doc") {
+              return <DocMessage msg={msg} />; // document componrt
+            } else if (msg.subtype === "link") {
+              return <LinkMsg msg={msg} />; // link component
+            } else if (msg.subtype === "reply") {
+              return <ReplyMessage msg={msg} />; //reply comp
             } else {
               return <TextMesage msg={msg} />; // Text message component
             }
